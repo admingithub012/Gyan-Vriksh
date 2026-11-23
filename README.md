@@ -1,2 +1,2 @@
 # Gyan-Vriksh
-It is  Organization 
+It is non-profitable Organization 

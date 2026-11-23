@@ -1,0 +1,112 @@
+:root {
+  /* ===== PRIMARY BRAND & ACCENT COLORS ===== */
+  /* Main brand green: top strip, primary buttons, key headings, active accents */
+  --color-primary: #1B4332;
+
+  /* Rich hover/pressed state for primary buttons or dark green surfaces */
+  --color-primary-dark: #122E22;
+
+  /* Secondary leaf/sage green: highlights, secondary badges, subtle borders */
+  --color-secondary: #2D6A4F;
+
+  /* Soft sage/olive tint: hover states on dark green bars, tags, callout borders */
+  --color-accent-soft: #BBC7A4;
+
+  /* Warm earth/amber accent (optional): "Donate" / "Get Involved" CTA buttons */
+  --color-cta: #D97706;
+  --color-cta-hover: #B45309;
+
+  /* ===== BACKGROUNDS & SURFACES ===== */
+  /* Main page background */
+  --bg-page: #FFFFFF;
+
+  /* Soft off-white surface: navbar, alternating content sections, cards */
+  --bg-surface: #F9FAF7;
+
+  /* Subtle tinted surface: light info boxes, gallery captions, quote backgrounds */
+  --bg-surface-muted: #EEF2EA;
+
+  /* Dark footer or banner background */
+  --bg-dark: #0F241B;
+
+  /* ===== TEXT COLORS ===== */
+  /* Main body copy and paragraphs */
+  --text-primary: #1F2933;
+
+  /* Secondary text: captions, dates, subtitles, helper labels */
+  --text-secondary: #52606D;
+
+  /* Branded headings and navigation links */
+  --text-brand: #1B4332;
+
+  /* Text placed on dark backgrounds (top strip, dark buttons, footer) */
+  --text-on-dark: #FFFFFF;
+
+  /* Muted text on dark backgrounds (footer secondary links, copyrights) */
+  --text-on-dark-muted: #D8E2DC;
+
+  /* ===== BORDERS, DIVIDERS & SHADOWS ===== */
+  /* Light borders: cards, form inputs, subtle dividers */
+  --border-light: #E2E8E4;
+
+  /* Medium borders/rules: <hr> lines, active outlines */
+  --border-medium: #C5D1C9;
+
+  /* Soft shadow tint for cards, dropdowns, and sticky header */
+  --shadow-color: rgba(27, 67, 50, 0.08);
+
+  /* ===== STATUS / FEEDBACK COLORS (FORMS & ALERTS) ===== */
+  --color-success: #1E7E34;
+  --color-warning: #B7791F;
+  --color-error: #B91C1C;
+}
+
+/* ===== EXAMPLE USAGE IN YOUR STYLESHEET ===== */
+
+/* Page & top bar */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+}
+
+.top-strip {
+  background-color: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+.top-action a {
+  color: var(--text-on-dark);
+}
+
+.top-action a:hover {
+  color: var(--color-accent-soft);
+}
+
+/* Navigation bar & dropdown */
+.nav-bar {
+  background-color: var(--bg-surface);
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.nav-bar a {
+  color: var(--text-brand);
+}
+
+/* Section headings & horizontal divider */
+.heading h3 {
+  color: var(--text-brand);
+}
+
+.heading hr {
+  border-top-color: var(--border-medium);
+}
+
+/* Example primary button */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--text-on-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
